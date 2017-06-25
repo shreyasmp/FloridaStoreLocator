@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+
+    <!-- ImageView for displaying Store Logo on Left as per Requirement -->
+
+    <ImageView
+        android:id="@+id/storelogo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        />
+
+    <!-- TextView to display Phone number below Logo -->
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/storelogo"
+        android:layout_alignLeft="@+id/storelogo"
+        android:layout_marginBottom="5dp"/>
+
+    <!-- Text View to display address of Store next to phone number to Right -->
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:layout_toRightOf="@+id/phone"
+        android:layout_alignTop="@+id/phone"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>
